@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>新功能添加失败</title>
+    <url>/2024/06/18/more_function/</url>
+    <content><![CDATA[<h1 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h1><p>昨天搞评论系统把博客搞崩了，今天好不容易又重构回来了，我只能说非常难受，评论系统啥的从长计议吧。</p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Introduction</title>
     <url>/2024/06/17/Introduction/</url>
     <content><![CDATA[<p>​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！</p>

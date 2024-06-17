@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-06-17T16:19:55.173Z</updated>
+  <updated>2024-06-17T17:54:19.442Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新功能添加失败</title>
+    <link href="http://example.com/2024/06/18/more_function/"/>
+    <id>http://example.com/2024/06/18/more_function/</id>
+    <published>2024-06-17T17:50:28.270Z</published>
+    <updated>2024-06-17T17:54:19.442Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h1><p>昨天搞评论系统把博客搞崩了，今天好不容易又重构回来了，我只能说非常难受，评论系统啥的从长计议吧。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;概况&quot;&gt;&lt;a href=&quot;#概况&quot; class=&quot;headerlink&quot; title=&quot;概况&quot;&gt;&lt;/a&gt;概况&lt;/h1&gt;&lt;p&gt;昨天搞评论系统把博客搞崩了，今天好不容易又重构回来了，我只能说非常难受，评论系统啥的从长计议吧。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="Normal" scheme="http://example.com/tags/Normal/"/>
+    
+  </entry>
   
   <entry>
     <title>Introduction</title>
