@@ -92,7 +92,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">80</span>
+            <span class="post-count">109</span>
         </span>
     </span>
 
@@ -116,7 +116,22 @@
        
   <p>​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！</p>
 <p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/abde3514-1f0c-4fd2-9dac-e6b730d9dff0"></p>
- 
+<p>&lt;% if (theme.gitalk) { %&gt;</p>
+<div id="gitalk-container"></div>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '<%= theme.gitalk.clientID %>',
+    clientSecret: '<%= theme.gitalk.clientSecret %>',
+    repo: '<%= theme.gitalk.repo %>',
+    owner: '<%= theme.gitalk.owner %>',
+    admin: '<%= theme.gitalk.admin %>',
+    id: '<%- page.path.replace(/\.md/, "") %>', // 用于定位评论的页面
+    distractionFreeMode: '<%= theme.gitalk.distractionFreeMode %>'
+  })
+  gitalk.render('gitalk-container')
+</script>
+<% } %> 
       <!-- reward -->
       
     </div>
