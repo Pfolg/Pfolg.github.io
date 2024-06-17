@@ -35,15 +35,6 @@
       </tags>
   </entry>
   <entry>
-    <title>My first blog</title>
-    <url>/2024/06/17/My-first-blog/</url>
-    <content><![CDATA[<p>我开始搭建博客的C站博文<br>    <a href="https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506">https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506</a><br>受益匪浅呐！<br>目前我正在慢慢抄这方面的代码and学习持久地使用这个博客，目前就这样了。祝我的编程之路不要太崎岖坎坷。</p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Introduction</title>
     <url>/2024/06/17/Introduction/</url>
     <content><![CDATA[<p>​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！</p>
@@ -272,6 +263,15 @@ if __name__ == &#39;__main__&#39;:
 ]]></content>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>My first blog</title>
+    <url>/2024/06/17/My-first-blog/</url>
+    <content><![CDATA[<p>我开始搭建博客的C站博文<br>    <a href="https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506">https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506</a><br>受益匪浅呐！<br>目前我正在慢慢抄这方面的代码and学习持久地使用这个博客，目前就这样了。祝我的编程之路不要太崎岖坎坷。</p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
       </tags>
   </entry>
   <entry>
