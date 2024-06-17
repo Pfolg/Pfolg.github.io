@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-06-17T09:31:55.313Z</updated>
+  <updated>2024-06-17T10:16:24.719Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Introduction</title>
+    <link href="http://example.com/2024/06/17/Introduction/"/>
+    <id>http://example.com/2024/06/17/Introduction/</id>
+    <published>2024-06-17T10:07:12.055Z</published>
+    <updated>2024-06-17T10:16:24.719Z</updated>
+    
+    <content type="html"><![CDATA[<p>​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！</p><p><img src="https://github.com/Pfolg/Pfolg.github.io/assets/166471137/7b245066-3c6a-4fe7-b9fd-d37ad68be81f" alt="55f9522e21bcaec7b48938c51c0b322e"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.co</summary>
+      
+    
+    
+    
+    
+    <category term="None" scheme="http://example.com/tags/None/"/>
+    
+  </entry>
+  
+  <entry>
     <title>借助Excel实现扫雷(Python)</title>
     <link href="http://example.com/2024/06/17/Mines_Cleaner/"/>
     <id>http://example.com/2024/06/17/Mines_Cleaner/</id>
     <published>2024-06-17T09:14:50.457Z</published>
-    <updated>2024-06-17T09:31:55.313Z</updated>
+    <updated>2024-06-17T10:19:02.475Z</updated>
     
     <content type="html"><![CDATA[<p>我就喜欢用零碎的知识搞些无用的东西（至少可以取乐）</p><h1 id="运行效果"><a href="#运行效果" class="headerlink" title="运行效果"></a>运行效果</h1><p><img src="https://img-blog.csdnimg.cn/direct/a06bb2baba374aa894decd101405f214.png" alt="alt text"></p><p><img src="https://img-blog.csdnimg.cn/direct/5ceb1bb0300847a3a366498ba0c07b15.png" alt="alt text"></p><h1 id="主要思路"><a href="#主要思路" class="headerlink" title="主要思路"></a>主要思路</h1><p><img src="https://img-blog.csdnimg.cn/direct/9e6a0a16a9ef44a88ce95e6e1389c69a.png" alt="alt text"></p><p>其他的都是陪衬</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>​<code>python print(&#39;由于作者markdown知识不扎实，读者可以访问C站文章&#39;) ​</code></p><p><a href="https://blog.csdn.net/qq_46603846/article/details/139206714?spm=1001.2014.3001.5502">https://blog.csdn.net/qq_46603846/article/details/139206714?spm=1001.2014.3001.5502</a></p><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>大部分资源可以在C站下载，这个我并没有发到Github，意思就是只有C站有，详情请参考我那篇文章。</p>]]></content>
     
@@ -42,9 +65,9 @@
     <link href="http://example.com/2024/06/17/GIS&amp;others/"/>
     <id>http://example.com/2024/06/17/GIS&amp;others/</id>
     <published>2024-06-17T07:23:44.000Z</published>
-    <updated>2024-06-17T08:18:47.086Z</updated>
+    <updated>2024-06-17T10:18:20.150Z</updated>
     
-    <content type="html"><![CDATA[<p>希望你喜欢（别关防火墙！！！！！！！！！！！！）</p><h1 id="ARCGIS"><a href="#ARCGIS" class="headerlink" title="ARCGIS"></a>ARCGIS</h1><h2 id="ArcGis-Server-10-2-安装方法（Server）"><a href="#ArcGis-Server-10-2-安装方法（Server）" class="headerlink" title="ArcGis Server 10.2 安装方法（Server）"></a>ArcGis Server 10.2 安装方法（Server）</h2><p><a href="https://blog.csdn.net/w137160164/article/details/129887053?spm=1001.2014.3001.5506">https://blog.csdn.net/w137160164/article/details/129887053?spm=1001.2014.3001.5506</a></p><h2 id="ArcGIS-10-2简体中文汉化教程"><a href="#ArcGIS-10-2简体中文汉化教程" class="headerlink" title="ArcGIS 10.2简体中文汉化教程"></a>ArcGIS 10.2简体中文汉化教程</h2><p><a href="https://blog.csdn.net/allenjiao/article/details/54345298">https://blog.csdn.net/allenjiao/article/details/54345298</a></p><p>PS:有安装包</p><p>PS:下载后的文件先解压再运行。</p><h2 id="ArcGIS10-2详细安装教程（附安装包获取方式）"><a href="#ArcGIS10-2详细安装教程（附安装包获取方式）" class="headerlink" title="ArcGIS10.2详细安装教程（附安装包获取方式）"></a>ArcGIS10.2详细安装教程（附安装包获取方式）</h2><p> <a href="https://blog.csdn.net/qq_43419534/article/details/121409190?spm=1001.2014.3001.5506">https://blog.csdn.net/qq_43419534/article/details/121409190?spm=1001.2014.3001.5506</a></p><p>教程看看就行，安装包依托答辩</p><p>.iso（4G的那个，老师给的）文件用老师的</p><h2 id="要替换的bin中的文件："><a href="#要替换的bin中的文件：" class="headerlink" title="要替换的bin中的文件："></a>要替换的bin中的文件：</h2><p>链接：<a href="https://pan.baidu.com/s/10xDVJsrQxQlDoa6U2YzOLg?pwd=6666">https://pan.baidu.com/s/10xDVJsrQxQlDoa6U2YzOLg?pwd=6666</a></p><p>提取码：6666</p><h2 id="安装server需要的一个文件："><a href="#安装server需要的一个文件：" class="headerlink" title="安装server需要的一个文件："></a>安装server需要的一个文件：</h2><p>如果没有遇到这一步请忽略</p><p><a href="https://www.cnblogs.com/ParanoiaApe/p/8886275.html">https://www.cnblogs.com/ParanoiaApe/p/8886275.html</a></p><h2 id="ArcGIS10-6-安装以及License许可启动无响应问题解决"><a href="#ArcGIS10-6-安装以及License许可启动无响应问题解决" class="headerlink" title="ArcGIS10.6 安装以及License许可启动无响应问题解决"></a>ArcGIS10.6 安装以及License许可启动无响应问题解决</h2><p>如果Desktop装不了，提示装一个东西，就按下图操作：</p><p>搜索“功能”</p><p><img src="/image.png" alt="alt text"></p><hr><p>勾选第一个，安装时间比较长。</p><p><img src="/netinstallway.png" alt="alt text"></p><h1 id="外挂推荐"><a href="#外挂推荐" class="headerlink" title="外挂推荐"></a>外挂推荐</h1><p>office一键安装使用</p><p><a href="https://www.mocreak.com/download.html">https://www.mocreak.com/download.html</a> </p><p>建议搭配360使用（可能存在病毒🌚🌚🌝🌝）</p><h1 id="自制脚本"><a href="#自制脚本" class="headerlink" title="自制脚本"></a>自制脚本</h1><p><a href="https://github.com/Pfolg/QR-code_maker">https://github.com/Pfolg/QR-code_maker</a>  二维码生成器</p><p>示例作品:</p><p><img src="/codeofno.png" alt="alt text"></p><p>PS:图片载入能力我正在学习中，如果您想舒服地访问这篇文章</p><p>click-&gt;<br>GIS安装教程合集<br><a href="https://kdocs.cn/l/ch2VsQ0lam3b">https://kdocs.cn/l/ch2VsQ0lam3b</a></p>]]></content>
+    <content type="html"><![CDATA[<p>希望你喜欢（别关防火墙！！！！！！！！！！！！）</p><h1 id="ARCGIS"><a href="#ARCGIS" class="headerlink" title="ARCGIS"></a>ARCGIS</h1><h2 id="ArcGis-Server-10-2-安装方法（Server）"><a href="#ArcGis-Server-10-2-安装方法（Server）" class="headerlink" title="ArcGis Server 10.2 安装方法（Server）"></a>ArcGis Server 10.2 安装方法（Server）</h2><p><a href="https://blog.csdn.net/w137160164/article/details/129887053?spm=1001.2014.3001.5506">https://blog.csdn.net/w137160164/article/details/129887053?spm=1001.2014.3001.5506</a></p><h2 id="ArcGIS-10-2简体中文汉化教程"><a href="#ArcGIS-10-2简体中文汉化教程" class="headerlink" title="ArcGIS 10.2简体中文汉化教程"></a>ArcGIS 10.2简体中文汉化教程</h2><p><a href="https://blog.csdn.net/allenjiao/article/details/54345298">https://blog.csdn.net/allenjiao/article/details/54345298</a></p><p>PS:有安装包</p><p>PS:下载后的文件先解压再运行。</p><h2 id="ArcGIS10-2详细安装教程（附安装包获取方式）"><a href="#ArcGIS10-2详细安装教程（附安装包获取方式）" class="headerlink" title="ArcGIS10.2详细安装教程（附安装包获取方式）"></a>ArcGIS10.2详细安装教程（附安装包获取方式）</h2><p> <a href="https://blog.csdn.net/qq_43419534/article/details/121409190?spm=1001.2014.3001.5506">https://blog.csdn.net/qq_43419534/article/details/121409190?spm=1001.2014.3001.5506</a></p><p>教程看看就行，安装包依托答辩</p><p>.iso（4G的那个，老师给的）文件用老师的</p><h2 id="要替换的bin中的文件："><a href="#要替换的bin中的文件：" class="headerlink" title="要替换的bin中的文件："></a>要替换的bin中的文件：</h2><p>链接：<a href="https://pan.baidu.com/s/10xDVJsrQxQlDoa6U2YzOLg?pwd=6666">https://pan.baidu.com/s/10xDVJsrQxQlDoa6U2YzOLg?pwd=6666</a></p><p>提取码：6666</p><h2 id="安装server需要的一个文件："><a href="#安装server需要的一个文件：" class="headerlink" title="安装server需要的一个文件："></a>安装server需要的一个文件：</h2><p>如果没有遇到这一步请忽略</p><p><a href="https://www.cnblogs.com/ParanoiaApe/p/8886275.html">https://www.cnblogs.com/ParanoiaApe/p/8886275.html</a></p><h2 id="ArcGIS10-6-安装以及License许可启动无响应问题解决"><a href="#ArcGIS10-6-安装以及License许可启动无响应问题解决" class="headerlink" title="ArcGIS10.6 安装以及License许可启动无响应问题解决"></a>ArcGIS10.6 安装以及License许可启动无响应问题解决</h2><p>如果Desktop装不了，提示装一个东西，就按下图操作：</p><p>搜索“功能”</p><p><img src="https://github.com/Pfolg/Pfolg.github.io/assets/166471137/965fe63d-09b8-4222-abec-023a8cb06c48" alt="image"></p><hr><p>勾选第一个，安装时间比较长。</p><p><img src="https://github.com/Pfolg/Pfolg.github.io/assets/166471137/02224027-fa2d-4c23-bff7-821e6031318c" alt="netinstallway"></p><h1 id="外挂推荐"><a href="#外挂推荐" class="headerlink" title="外挂推荐"></a>外挂推荐</h1><p>office一键安装使用</p><p><a href="https://www.mocreak.com/download.html">https://www.mocreak.com/download.html</a> </p><p>建议搭配360使用（可能存在病毒🌚🌚🌝🌝）</p><h1 id="自制脚本"><a href="#自制脚本" class="headerlink" title="自制脚本"></a>自制脚本</h1><p><a href="https://github.com/Pfolg/QR-code_maker">https://github.com/Pfolg/QR-code_maker</a>  二维码生成器</p><p>示例作品:</p><p><img src="https://github.com/Pfolg/Pfolg.github.io/assets/166471137/3a8b5426-ccfb-40ae-870d-b50d4747d934" alt="codeofno"></p><p>PS:如果您想舒服地访问这篇文章</p><p>click-&gt;<br>GIS安装教程合集<br><a href="https://kdocs.cn/l/ch2VsQ0lam3b">https://kdocs.cn/l/ch2VsQ0lam3b</a></p>]]></content>
     
     
       
