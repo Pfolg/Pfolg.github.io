@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>My first blog</title>
-    <url>/2024/06/17/My-first-blog/</url>
-    <content><![CDATA[<p>我开始搭建博客的C站博文<br>    <a href="https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506">https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506</a><br>受益匪浅呐！<br>目前我正在慢慢抄这方面的代码and学习持久地使用这个博客，目前就这样了。祝我的编程之路不要太崎岖坎坷。</p>
+    <title>新功能添加失败</title>
+    <url>/2024/06/18/more_function/</url>
+    <content><![CDATA[<h1 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h1><p>昨天搞评论系统把博客搞崩了，今天好不容易又重构回来了，我只能说非常难受，评论系统啥的从长计议吧。</p>
 ]]></content>
       <tags>
         <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Introduction</title>
+    <url>/2024/06/17/Introduction/</url>
+    <content><![CDATA[<p>​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！</p>
+<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/abde3514-1f0c-4fd2-9dac-e6b730d9dff0"></p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>借助Excel实现扫雷(Python)</title>
+    <url>/2024/06/17/Mines_Cleaner/</url>
+    <content><![CDATA[<p>我就喜欢用零碎的知识搞些无用的东西（至少可以取乐）</p>
+<h1 id="运行效果"><a href="#运行效果" class="headerlink" title="运行效果"></a>运行效果</h1><p><img src="https://img-blog.csdnimg.cn/direct/a06bb2baba374aa894decd101405f214.png" alt="alt text"></p>
+<p><img src="https://img-blog.csdnimg.cn/direct/5ceb1bb0300847a3a366498ba0c07b15.png" alt="alt text"></p>
+<h1 id="主要思路"><a href="#主要思路" class="headerlink" title="主要思路"></a>主要思路</h1><p><img src="https://img-blog.csdnimg.cn/direct/9e6a0a16a9ef44a88ce95e6e1389c69a.png" alt="alt text"></p>
+<p>其他的都是陪衬</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>​<code>python print(&#39;由于作者markdown知识不扎实，读者可以访问C站文章&#39;) ​</code></p>
+<p><a href="https://blog.csdn.net/qq_46603846/article/details/139206714?spm=1001.2014.3001.5502">https://blog.csdn.net/qq_46603846/article/details/139206714?spm=1001.2014.3001.5502</a></p>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>大部分资源可以在C站下载，这个我并没有发到Github，意思就是只有C站有，详情请参考我那篇文章。</p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -41,62 +67,6 @@
 ]]></content>
       <tags>
         <tag>GIS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Introduction</title>
-    <url>/2024/06/17/Introduction/</url>
-    <content><![CDATA[<p>​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！</p>
-<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/abde3514-1f0c-4fd2-9dac-e6b730d9dff0"></p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>借助Excel实现扫雷(Python)</title>
-    <url>/2024/06/17/Mines_Cleaner/</url>
-    <content><![CDATA[<p>我就喜欢用零碎的知识搞些无用的东西（至少可以取乐）</p>
-<h1 id="运行效果"><a href="#运行效果" class="headerlink" title="运行效果"></a>运行效果</h1><p><img src="https://img-blog.csdnimg.cn/direct/a06bb2baba374aa894decd101405f214.png" alt="alt text"></p>
-<p><img src="https://img-blog.csdnimg.cn/direct/5ceb1bb0300847a3a366498ba0c07b15.png" alt="alt text"></p>
-<h1 id="主要思路"><a href="#主要思路" class="headerlink" title="主要思路"></a>主要思路</h1><p><img src="https://img-blog.csdnimg.cn/direct/9e6a0a16a9ef44a88ce95e6e1389c69a.png" alt="alt text"></p>
-<p>其他的都是陪衬</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>​<code>python print(&#39;由于作者markdown知识不扎实，读者可以访问C站文章&#39;) ​</code></p>
-<p><a href="https://blog.csdn.net/qq_46603846/article/details/139206714?spm=1001.2014.3001.5502">https://blog.csdn.net/qq_46603846/article/details/139206714?spm=1001.2014.3001.5502</a></p>
-<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>大部分资源可以在C站下载，这个我并没有发到Github，意思就是只有C站有，详情请参考我那篇文章。</p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新功能添加失败</title>
-    <url>/2024/06/18/more_function/</url>
-    <content><![CDATA[<h1 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h1><p>昨天搞评论系统把博客搞崩了，今天好不容易又重构回来了，我只能说非常难受，评论系统啥的从长计议吧。</p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/06/17/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
       </tags>
   </entry>
   <entry>
@@ -302,6 +272,36 @@ if __name__ == &#39;__main__&#39;:
 ]]></content>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>My first blog</title>
+    <url>/2024/06/17/My-first-blog/</url>
+    <content><![CDATA[<p>我开始搭建博客的C站博文<br>    <a href="https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506">https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506</a><br>受益匪浅呐！<br>目前我正在慢慢抄这方面的代码and学习持久地使用这个博客，目前就这样了。祝我的编程之路不要太崎岖坎坷。</p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/06/17/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
       </tags>
   </entry>
 </search>
