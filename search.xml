@@ -35,16 +35,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Introduction</title>
-    <url>/2024/06/17/Introduction/</url>
-    <content><![CDATA[<p>​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！</p>
-<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/abde3514-1f0c-4fd2-9dac-e6b730d9dff0"></p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>借助Excel实现扫雷(Python)</title>
     <url>/2024/06/17/Mines_Cleaner/</url>
     <content><![CDATA[<p>我就喜欢用零碎的知识搞些无用的东西（至少可以取乐）</p>
@@ -57,6 +47,25 @@
 ]]></content>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>My first blog</title>
+    <url>/2024/06/17/My-first-blog/</url>
+    <content><![CDATA[<p>我开始搭建博客的C站博文<br>    <a href="https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506">https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506</a><br>受益匪浅呐！<br>目前我正在慢慢抄这方面的代码and学习持久地使用这个博客，目前就这样了。祝我的编程之路不要太崎岖坎坷。</p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Introduction</title>
+    <url>/2024/06/17/Introduction/</url>
+    <content><![CDATA[<p>​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！</p>
+<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/abde3514-1f0c-4fd2-9dac-e6b730d9dff0"></p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
       </tags>
   </entry>
   <entry>
@@ -263,24 +272,6 @@ if __name__ == &#39;__main__&#39;:
       </tags>
   </entry>
   <entry>
-    <title>My first blog</title>
-    <url>/2024/06/17/My-first-blog/</url>
-    <content><![CDATA[<p>我开始搭建博客的C站博文<br>    <a href="https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506">https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506</a><br>受益匪浅呐！<br>目前我正在慢慢抄这方面的代码and学习持久地使用这个博客，目前就这样了。祝我的编程之路不要太崎岖坎坷。</p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新功能添加失败</title>
-    <url>/2024/06/18/more_function/</url>
-    <content><![CDATA[<h1 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h1><p>昨天搞评论系统把博客搞崩了，今天好不容易又重构回来了，我只能说非常难受，评论系统啥的从长计议吧。</p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2024/06/17/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -296,6 +287,15 @@ if __name__ == &#39;__main__&#39;:
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新功能添加失败</title>
+    <url>/2024/06/18/more_function/</url>
+    <content><![CDATA[<h1 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h1><p>昨天搞评论系统把博客搞崩了，今天好不容易又重构回来了，我只能说非常难受，评论系统啥的从长计议吧。</p>
 ]]></content>
       <tags>
         <tag>Normal</tag>
@@ -333,6 +333,24 @@ if __name__ == &#39;__main__&#39;:
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我确实成功部署了我的评论系统，但是还是不太行，比如头像什么的都只能用给定的，毕竟我这方面知识欠缺。<br>当然，我不可能全部都用AI的建议，至少我还是参考了C站文章的（**<a href="https://blog.csdn.net/jiunian_2761/article/details/122621667">Hexo博客进阶：为 Next 主题添加 Waline 评论系统</a>**）。<br>我看看能不能找一点好看的头像，或者就那样了，算了直接隐藏吧，反正也没啥大用，能显示昵称就可以了。</p>
 <h2 id="初代示例"><a href="#初代示例" class="headerlink" title="初代示例"></a>初代示例</h2><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/53e99981-307e-438f-ac8a-2185b6157304" alt="初代示例"></p>
 <h2 id="关于配置"><a href="#关于配置" class="headerlink" title="关于配置"></a>关于配置</h2><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/9f0faf04-132c-4815-aaf6-72dc361d612e"></p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浅谈“维波斯基”病毒</title>
+    <url>/2024/06/18/virusbsvj/</url>
+    <content><![CDATA[<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><h2 id="前摇"><a href="#前摇" class="headerlink" title="前摇"></a>前摇</h2><p>明天要考试了，学院里边部分学GIS的同学会去机房练题，我也不例外。但是，你看呐，机房资源还是比较丰富的，我就<strong>搬</strong>了一点回来。</p>
+<p>在那之前，我总是会检查一下文件有啥吧，那个压缩包里边有一个空文件夹（其实是病毒啦），于是本人也是非常配合的双击了这个文件夹，发现啥都没有，而我也不知道整个U盘已经充满了病毒。</p>
+<h2 id="高潮"><a href="#高潮" class="headerlink" title="高潮"></a>高潮</h2><p>等我晚上在自己电脑上查看文件时，我咧个saogang啊！360直接狂报毒！！！</p>
+<p>如图：<br><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/ea9f659b-05bc-4e80-a5fd-60beadae143a"></p>
+<h2 id="反击"><a href="#反击" class="headerlink" title="反击"></a>反击</h2><p>还好我装了360，并且调教好了（一般小白不要随便下，把持不住），于是愉快的反击时刻到了，我一下子想起了机房的不对劲，精准地找到了这个病毒，and kill it!<br><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/db323047-f93a-4c19-9421-8c9d102058d7"></p>
+<h2 id="事后"><a href="#事后" class="headerlink" title="事后"></a>事后</h2><p>在QQ群里闹腾了一下，<del>其实没必要吧</del> 谁叫我知道同学的U盘也有那个压缩包呢（手动狗头）。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我们来了解一下<strong>U盘文件夹变成EXE文件</strong>的原因。这种现象主要是由于一种名为“<a href="https://www.sohu.com/a/747243657_121769698">维波斯基</a>”的病毒所导致的。这种病毒会感染U盘中的文件和文件夹，将其修改为EXE文件形式，从而隐藏真实的文件内容。当用户在不知情的情况下打开这些EXE文件时，病毒就会发作，对用户的计算机造成损害。因此，当我们发现U盘中的文件夹变成了EXE文件时，一定要提高警惕，尽快采取措施解决问题。</p>
+<p>其实小编有个360会更方便，嘿嘿。</p>
+<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/1077f5ae-5676-4321-9b04-d0fd77be423c" alt="如图，文件夹变成.exe文件了"></p>
+<p>所以，平时咱们要有一颗细致的心，再加上规律作息得来的好记性，外加一点点尖端工具的辅助，电脑才能用得长久。<br>至于360，我的意见是客观看待，会用的和不会用的都说它是神中神，至于中间的，嘿嘿，自己揣摩。</p>
 ]]></content>
       <tags>
         <tag>Normal</tag>
