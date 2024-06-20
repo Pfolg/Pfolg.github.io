@@ -1,99 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>浅谈“维波斯基”病毒</title>
-    <url>/2024/06/18/virusbsvj/</url>
-    <content><![CDATA[<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><h2 id="前摇"><a href="#前摇" class="headerlink" title="前摇"></a>前摇</h2><p>明天要考试了，学院里边部分学GIS的同学会去机房练题，我也不例外。但是，你看呐，机房资源还是比较丰富的，我就<strong>搬</strong>了一点回来。</p>
-<p>在那之前，我总是会检查一下文件有啥吧，那个压缩包里边有一个空文件夹（其实是病毒啦），于是本人也是非常配合的双击了这个文件夹，发现啥都没有，而我也不知道整个U盘已经充满了病毒。</p>
-<h2 id="高潮"><a href="#高潮" class="headerlink" title="高潮"></a>高潮</h2><p>等我晚上在自己电脑上查看文件时，我咧个saogang啊！360直接狂报毒！！！</p>
-<p>如图：<br><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/ea9f659b-05bc-4e80-a5fd-60beadae143a"></p>
-<h2 id="反击"><a href="#反击" class="headerlink" title="反击"></a>反击</h2><p>还好我装了360，并且调教好了（一般小白不要随便下，把持不住），于是愉快的反击时刻到了，我一下子想起了机房的不对劲，精准地找到了这个病毒，and kill it!<br><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/db323047-f93a-4c19-9421-8c9d102058d7"></p>
-<h2 id="事后"><a href="#事后" class="headerlink" title="事后"></a>事后</h2><p>在QQ群里闹腾了一下，<del>其实没必要吧</del> 谁叫我知道同学的U盘也有那个压缩包呢（手动狗头）。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="网络文章"><a href="#网络文章" class="headerlink" title="网络文章"></a>网络文章</h2><p>我们来了解一下<strong>U盘文件夹变成EXE文件</strong>的原因。这种现象主要是由于一种名为“<a href="https://www.sohu.com/a/747243657_121769698">维波斯基</a>”的病毒所导致的。这种病毒会感染U盘中的文件和文件夹，将其修改为EXE文件形式，从而隐藏真实的文件内容。当用户在不知情的情况下打开这些EXE文件时，病毒就会发作，对用户的计算机造成损害。因此，当我们发现U盘中的文件夹变成了EXE文件时，一定要提高警惕，尽快采取措施解决问题。</p>
-<p>其实小编有个360会更方便，嘿嘿。</p>
-<h2 id="AI搜索"><a href="#AI搜索" class="headerlink" title="AI搜索"></a>AI搜索</h2><p>维波斯基（Virus.Win32.Viking.ao）是一种计算机病毒，属于蠕虫类病毒。这种病毒通常通过网络传播，能够感染Windows操作系统的计算机。它具有自我复制和传播的能力，可以对计算机系统造成损害，例如删除文件、降低系统性能、窃取个人信息等。</p>
-<p>当维波斯基病毒进入计算机系统后，它会尝试将自己复制到其他计算机上，通常通过网络共享、电子邮件附件、即时消息附件等方式传播。它还可能修改系统设置，使得计算机更容易受到其他恶意软件的攻击。</p>
-<p>为了保护计算机不受维波斯基病毒的侵害，用户应该采取以下措施：</p>
-<p>安装并更新防病毒软件，并定期进行全盘扫描。<br>不要打开来历不明的电子邮件附件或下载可疑的文件。<br>定期备份重要数据，以防数据丢失。<br>保持操作系统和软件的更新，修补已知的安全漏洞。<br>如果怀疑计算机被维波斯基病毒或其他恶意软件感染，应立即使用可靠的防病毒软件进行扫描和清理。同时，建议用户提高网络安全意识，避免不必要的风险。</p>
-<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/1077f5ae-5676-4321-9b04-d0fd77be423c" alt="如图，文件夹变成.exe文件了"></p>
-<p>所以，平时咱们要有一颗细致的心，再加上规律作息得来的好记性，外加一点点尖端工具的辅助，电脑才能用得长久。<br>至于360，我的意见是客观看待，会用的和不会用的都说它是神中神，至于中间的，嘿嘿，自己揣摩。</p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新功能添加成功</title>
-    <url>/2024/06/18/more_function_success/</url>
-    <content><![CDATA[<h1 id="AI给的教程"><a href="#AI给的教程" class="headerlink" title="AI给的教程"></a>AI给的教程</h1><p>Valine 是一个基于 LeanCloud 的快速、简洁、无后端的评论系统。它适用于 Hexo 博客系统，可以让你的博客快速拥有评论功能。以下是将 Valine 部署到 Hexo 博客的详细教程：</p>
-<h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>确保你已经安装了 Hexo，并且你的博客已经搭建完成。</p>
-<h3 id="2-安装-Valine-插件"><a href="#2-安装-Valine-插件" class="headerlink" title="2. 安装 Valine 插件"></a>2. 安装 Valine 插件</h3><p>在 Hexo 根目录下打开命令行工具，执行以下命令安装 Valine 插件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-comment-valine --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-配置-Valine"><a href="#3-配置-Valine" class="headerlink" title="3. 配置 Valine"></a>3. 配置 Valine</h3><p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中添加 Valine 的配置信息。你需要在 <code>valine</code> 部分填写你的 LeanCloud 应用的 AppID 和 AppKey。如果你还没有创建 LeanCloud 应用，请先到 <a href="https://leancloud.cn/">LeanCloud 官网</a> 注册并创建一个应用。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">appid:</span> <span class="comment"># 你的 LeanCloud 应用的 AppID</span></span><br><span class="line">  <span class="attr">appkey:</span> <span class="comment"># 你的 LeanCloud 应用的 AppKey</span></span><br><span class="line">  <span class="attr">notify:</span> <span class="literal">false</span> <span class="comment"># 邮件提醒</span></span><br><span class="line">  <span class="attr">verify:</span> <span class="literal">false</span> <span class="comment"># 验证码</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">请输入评论...</span> <span class="comment"># 输入框占位提示</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment"># 头像样式</span></span><br><span class="line">  <span class="attr">guest_info:</span> <span class="string">nick,mail,link</span> <span class="comment"># 显示评论者信息</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># 每页显示评论数</span></span><br><span class="line">  <span class="attr">lang:</span> <span class="string">zh-cn</span> <span class="comment"># 语言</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">true</span> <span class="comment"># 文章阅读量统计</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-配置-LeanCloud"><a href="#4-配置-LeanCloud" class="headerlink" title="4. 配置 LeanCloud"></a>4. 配置 LeanCloud</h3><p>在 LeanCloud 的控制台中，你需要为你的应用创建一个 Class，名称为 <code>Comment</code>。这是 Valine 用来存储评论数据的。</p>
-<ul>
-<li>登录 LeanCloud 控制台。</li>
-<li>选择你的应用，进入“存储”-&gt;“数据”。</li>
-<li>点击“创建 Class”，输入名称 <code>Comment</code>，选择“无权限”。</li>
-<li>创建完成后，点击 <code>Comment</code> Class，进入设置，选择“权限”标签页，将“读写权限”设置为“所有人”。</li>
-</ul>
-<h3 id="5-启用-Valine"><a href="#5-启用-Valine" class="headerlink" title="5. 启用 Valine"></a>5. 启用 Valine</h3><p>在 Hexo 的站点配置文件 <code>_config.yml</code> 中，确保 <code>comment</code> 部分被启用，并且设置为 <code>valine</code>。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">valine</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="6-清除缓存并部署"><a href="#6-清除缓存并部署" class="headerlink" title="6. 清除缓存并部署"></a>6. 清除缓存并部署</h3><p>在 Hexo 根目录下执行以下命令，清除缓存并重新生成静态文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>最后，使用以下命令部署你的博客：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-<h3 id="7-测试"><a href="#7-测试" class="headerlink" title="7. 测试"></a>7. 测试</h3><p>在你的博客页面上找到一篇文章，查看评论功能是否正常工作。如果一切配置正确，你应该能看到 Valine 的评论框，并且可以发表评论。</p>
-<p>以上步骤完成后，你的 Hexo 博客应该已经成功部署了 Valine 评论系统。如果在部署过程中遇到任何问题，可以查看 Valine 的官方文档或 Hexo 的相关插件文档获取帮助。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我确实成功部署了我的评论系统，但是还是不太行，比如头像什么的都只能用给定的，毕竟我这方面知识欠缺。<br>当然，我不可能全部都用AI的建议，至少我还是参考了C站文章的（**<a href="https://blog.csdn.net/jiunian_2761/article/details/122621667">Hexo博客进阶：为 Next 主题添加 Waline 评论系统</a>**）。<br>我看看能不能找一点好看的头像，或者就那样了，算了直接隐藏吧，反正也没啥大用，能显示昵称就可以了。</p>
-<h2 id="初代示例"><a href="#初代示例" class="headerlink" title="初代示例"></a>初代示例</h2><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/53e99981-307e-438f-ac8a-2185b6157304" alt="初代示例"></p>
-<h2 id="关于配置"><a href="#关于配置" class="headerlink" title="关于配置"></a>关于配置</h2><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/9f0faf04-132c-4815-aaf6-72dc361d612e"></p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>新功能添加失败</title>
-    <url>/2024/06/18/more_function/</url>
-    <content><![CDATA[<h1 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h1><p>昨天搞评论系统把博客搞崩了，今天好不容易又重构回来了，我只能说非常难受，评论系统啥的从长计议吧。</p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Introduction</title>
-    <url>/2024/06/17/Introduction/</url>
-    <content><![CDATA[<p>​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！</p>
-<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/abde3514-1f0c-4fd2-9dac-e6b730d9dff0"></p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>借助Excel实现扫雷(Python)</title>
-    <url>/2024/06/17/Mines_Cleaner/</url>
-    <content><![CDATA[<p>我就喜欢用零碎的知识搞些无用的东西（至少可以取乐）</p>
-<h1 id="运行效果"><a href="#运行效果" class="headerlink" title="运行效果"></a>运行效果</h1><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/32a6b2c5-e01e-4bdb-8a02-85d4340066a4"><br><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/e785ef15-5fb3-4e23-b0c3-d7967d121c10"></p>
-<h1 id="主要思路"><a href="#主要思路" class="headerlink" title="主要思路"></a>主要思路</h1><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/bf1063ed-36f8-4211-a9dd-0fc2ce249ea5"></p>
-<p>其他的都是陪衬</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>​<code> print(&#39;由于作者markdown知识不扎实，读者可以访问C站文章&#39;) ​</code></p>
-<p><a href="https://blog.csdn.net/qq_46603846/article/details/139206714?spm=1001.2014.3001.5502">https://blog.csdn.net/qq_46603846/article/details/139206714?spm=1001.2014.3001.5502</a></p>
-<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>大部分资源可以在C站下载，这个我并没有发到Github，意思就是只有C站有，详情请参考我那篇文章。</p>
-]]></content>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GIS安装教程合集</title>
     <url>/2024/06/17/GIS&amp;others/</url>
     <content><![CDATA[<p>希望你喜欢（别关防火墙！！！！！！！！！！！！）</p>
@@ -125,6 +32,49 @@
 ]]></content>
       <tags>
         <tag>GIS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Introduction</title>
+    <url>/2024/06/17/Introduction/</url>
+    <content><![CDATA[<p>​哈喽大家好，这个是我刚做出来的个人博客。本着能省则省的原则，我愣是没有花一分钱，100%利用了GitHub！！！以后文章我可能只会自己搞自己的。当然，博客网站功能还不太全面，我会好好学习，争取早日nb！</p>
+<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/abde3514-1f0c-4fd2-9dac-e6b730d9dff0"></p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>借助Excel实现扫雷(Python)</title>
+    <url>/2024/06/17/Mines_Cleaner/</url>
+    <content><![CDATA[<p>我就喜欢用零碎的知识搞些无用的东西（至少可以取乐）</p>
+<h1 id="运行效果"><a href="#运行效果" class="headerlink" title="运行效果"></a>运行效果</h1><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/32a6b2c5-e01e-4bdb-8a02-85d4340066a4"><br><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/e785ef15-5fb3-4e23-b0c3-d7967d121c10"></p>
+<h1 id="主要思路"><a href="#主要思路" class="headerlink" title="主要思路"></a>主要思路</h1><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/bf1063ed-36f8-4211-a9dd-0fc2ce249ea5"></p>
+<p>其他的都是陪衬</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>​<code> print(&#39;由于作者markdown知识不扎实，读者可以访问C站文章&#39;) ​</code></p>
+<p><a href="https://blog.csdn.net/qq_46603846/article/details/139206714?spm=1001.2014.3001.5502">https://blog.csdn.net/qq_46603846/article/details/139206714?spm=1001.2014.3001.5502</a></p>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>大部分资源可以在C站下载，这个我并没有发到Github，意思就是只有C站有，详情请参考我那篇文章。</p>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>My first blog</title>
+    <url>/2024/06/17/My-first-blog/</url>
+    <content><![CDATA[<p>我开始搭建博客的C站博文<br>    <a href="https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506">https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506</a><br>受益匪浅呐！<br>目前我正在慢慢抄这方面的代码and学习持久地使用这个博客，目前就这样了。祝我的编程之路不要太崎岖坎坷。</p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新功能添加失败</title>
+    <url>/2024/06/18/more_function/</url>
+    <content><![CDATA[<h1 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h1><p>昨天搞评论系统把博客搞崩了，今天好不容易又重构回来了，我只能说非常难受，评论系统啥的从长计议吧。</p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
       </tags>
   </entry>
   <entry>
@@ -331,15 +281,6 @@ if __name__ == &#39;__main__&#39;:
       </tags>
   </entry>
   <entry>
-    <title>My first blog</title>
-    <url>/2024/06/17/My-first-blog/</url>
-    <content><![CDATA[<p>我开始搭建博客的C站博文<br>    <a href="https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506">https://blog.csdn.net/yushuaigee/article/details/111465155?spm=1001.2014.3001.5506</a><br>受益匪浅呐！<br>目前我正在慢慢抄这方面的代码and学习持久地使用这个博客，目前就这样了。祝我的编程之路不要太崎岖坎坷。</p>
-]]></content>
-      <tags>
-        <tag>Normal</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2024/06/17/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -355,6 +296,65 @@ if __name__ == &#39;__main__&#39;:
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新功能添加成功</title>
+    <url>/2024/06/18/more_function_success/</url>
+    <content><![CDATA[<h1 id="AI给的教程"><a href="#AI给的教程" class="headerlink" title="AI给的教程"></a>AI给的教程</h1><p>Valine 是一个基于 LeanCloud 的快速、简洁、无后端的评论系统。它适用于 Hexo 博客系统，可以让你的博客快速拥有评论功能。以下是将 Valine 部署到 Hexo 博客的详细教程：</p>
+<h3 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1. 准备工作"></a>1. 准备工作</h3><p>确保你已经安装了 Hexo，并且你的博客已经搭建完成。</p>
+<h3 id="2-安装-Valine-插件"><a href="#2-安装-Valine-插件" class="headerlink" title="2. 安装 Valine 插件"></a>2. 安装 Valine 插件</h3><p>在 Hexo 根目录下打开命令行工具，执行以下命令安装 Valine 插件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-comment-valine --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-配置-Valine"><a href="#3-配置-Valine" class="headerlink" title="3. 配置 Valine"></a>3. 配置 Valine</h3><p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中添加 Valine 的配置信息。你需要在 <code>valine</code> 部分填写你的 LeanCloud 应用的 AppID 和 AppKey。如果你还没有创建 LeanCloud 应用，请先到 <a href="https://leancloud.cn/">LeanCloud 官网</a> 注册并创建一个应用。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">appid:</span> <span class="comment"># 你的 LeanCloud 应用的 AppID</span></span><br><span class="line">  <span class="attr">appkey:</span> <span class="comment"># 你的 LeanCloud 应用的 AppKey</span></span><br><span class="line">  <span class="attr">notify:</span> <span class="literal">false</span> <span class="comment"># 邮件提醒</span></span><br><span class="line">  <span class="attr">verify:</span> <span class="literal">false</span> <span class="comment"># 验证码</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">请输入评论...</span> <span class="comment"># 输入框占位提示</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment"># 头像样式</span></span><br><span class="line">  <span class="attr">guest_info:</span> <span class="string">nick,mail,link</span> <span class="comment"># 显示评论者信息</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># 每页显示评论数</span></span><br><span class="line">  <span class="attr">lang:</span> <span class="string">zh-cn</span> <span class="comment"># 语言</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">true</span> <span class="comment"># 文章阅读量统计</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-配置-LeanCloud"><a href="#4-配置-LeanCloud" class="headerlink" title="4. 配置 LeanCloud"></a>4. 配置 LeanCloud</h3><p>在 LeanCloud 的控制台中，你需要为你的应用创建一个 Class，名称为 <code>Comment</code>。这是 Valine 用来存储评论数据的。</p>
+<ul>
+<li>登录 LeanCloud 控制台。</li>
+<li>选择你的应用，进入“存储”-&gt;“数据”。</li>
+<li>点击“创建 Class”，输入名称 <code>Comment</code>，选择“无权限”。</li>
+<li>创建完成后，点击 <code>Comment</code> Class，进入设置，选择“权限”标签页，将“读写权限”设置为“所有人”。</li>
+</ul>
+<h3 id="5-启用-Valine"><a href="#5-启用-Valine" class="headerlink" title="5. 启用 Valine"></a>5. 启用 Valine</h3><p>在 Hexo 的站点配置文件 <code>_config.yml</code> 中，确保 <code>comment</code> 部分被启用，并且设置为 <code>valine</code>。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">valine</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="6-清除缓存并部署"><a href="#6-清除缓存并部署" class="headerlink" title="6. 清除缓存并部署"></a>6. 清除缓存并部署</h3><p>在 Hexo 根目录下执行以下命令，清除缓存并重新生成静态文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>最后，使用以下命令部署你的博客：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-测试"><a href="#7-测试" class="headerlink" title="7. 测试"></a>7. 测试</h3><p>在你的博客页面上找到一篇文章，查看评论功能是否正常工作。如果一切配置正确，你应该能看到 Valine 的评论框，并且可以发表评论。</p>
+<p>以上步骤完成后，你的 Hexo 博客应该已经成功部署了 Valine 评论系统。如果在部署过程中遇到任何问题，可以查看 Valine 的官方文档或 Hexo 的相关插件文档获取帮助。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我确实成功部署了我的评论系统，但是还是不太行，比如头像什么的都只能用给定的，毕竟我这方面知识欠缺。<br>当然，我不可能全部都用AI的建议，至少我还是参考了C站文章的（**<a href="https://blog.csdn.net/jiunian_2761/article/details/122621667">Hexo博客进阶：为 Next 主题添加 Waline 评论系统</a>**）。<br>我看看能不能找一点好看的头像，或者就那样了，算了直接隐藏吧，反正也没啥大用，能显示昵称就可以了。</p>
+<h2 id="初代示例"><a href="#初代示例" class="headerlink" title="初代示例"></a>初代示例</h2><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/53e99981-307e-438f-ac8a-2185b6157304" alt="初代示例"></p>
+<h2 id="关于配置"><a href="#关于配置" class="headerlink" title="关于配置"></a>关于配置</h2><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/9f0faf04-132c-4815-aaf6-72dc361d612e"></p>
+]]></content>
+      <tags>
+        <tag>Normal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浅谈“维波斯基”病毒</title>
+    <url>/2024/06/18/virusbsvj/</url>
+    <content><![CDATA[<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><h2 id="前摇"><a href="#前摇" class="headerlink" title="前摇"></a>前摇</h2><p>明天要考试了，学院里边部分学GIS的同学会去机房练题，我也不例外。但是，你看呐，机房资源还是比较丰富的，我就<strong>搬</strong>了一点回来。</p>
+<p>在那之前，我总是会检查一下文件有啥吧，那个压缩包里边有一个空文件夹（其实是病毒啦），于是本人也是非常配合的双击了这个文件夹，发现啥都没有，而我也不知道整个U盘已经充满了病毒。</p>
+<h2 id="高潮"><a href="#高潮" class="headerlink" title="高潮"></a>高潮</h2><p>等我晚上在自己电脑上查看文件时，我咧个saogang啊！360直接狂报毒！！！</p>
+<p>如图：<br><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/ea9f659b-05bc-4e80-a5fd-60beadae143a"></p>
+<h2 id="反击"><a href="#反击" class="headerlink" title="反击"></a>反击</h2><p>还好我装了360，并且调教好了（一般小白不要随便下，把持不住），于是愉快的反击时刻到了，我一下子想起了机房的不对劲，精准地找到了这个病毒，and kill it!<br><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/db323047-f93a-4c19-9421-8c9d102058d7"></p>
+<h2 id="事后"><a href="#事后" class="headerlink" title="事后"></a>事后</h2><p>在QQ群里闹腾了一下，<del>其实没必要吧</del> 谁叫我知道同学的U盘也有那个压缩包呢（手动狗头）。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="网络文章"><a href="#网络文章" class="headerlink" title="网络文章"></a>网络文章</h2><p>我们来了解一下<strong>U盘文件夹变成EXE文件</strong>的原因。这种现象主要是由于一种名为“<a href="https://www.sohu.com/a/747243657_121769698">维波斯基</a>”的病毒所导致的。这种病毒会感染U盘中的文件和文件夹，将其修改为EXE文件形式，从而隐藏真实的文件内容。当用户在不知情的情况下打开这些EXE文件时，病毒就会发作，对用户的计算机造成损害。因此，当我们发现U盘中的文件夹变成了EXE文件时，一定要提高警惕，尽快采取措施解决问题。</p>
+<p>其实小编有个360会更方便，嘿嘿。</p>
+<h2 id="AI搜索"><a href="#AI搜索" class="headerlink" title="AI搜索"></a>AI搜索</h2><p>维波斯基（Virus.Win32.Viking.ao）是一种计算机病毒，属于蠕虫类病毒。这种病毒通常通过网络传播，能够感染Windows操作系统的计算机。它具有自我复制和传播的能力，可以对计算机系统造成损害，例如删除文件、降低系统性能、窃取个人信息等。</p>
+<p>当维波斯基病毒进入计算机系统后，它会尝试将自己复制到其他计算机上，通常通过网络共享、电子邮件附件、即时消息附件等方式传播。它还可能修改系统设置，使得计算机更容易受到其他恶意软件的攻击。</p>
+<p>为了保护计算机不受维波斯基病毒的侵害，用户应该采取以下措施：</p>
+<p>安装并更新防病毒软件，并定期进行全盘扫描。<br>不要打开来历不明的电子邮件附件或下载可疑的文件。<br>定期备份重要数据，以防数据丢失。<br>保持操作系统和软件的更新，修补已知的安全漏洞。<br>如果怀疑计算机被维波斯基病毒或其他恶意软件感染，应立即使用可靠的防病毒软件进行扫描和清理。同时，建议用户提高网络安全意识，避免不必要的风险。</p>
+<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/1077f5ae-5676-4321-9b04-d0fd77be423c" alt="如图，文件夹变成.exe文件了"></p>
+<p>所以，平时咱们要有一颗细致的心，再加上规律作息得来的好记性，外加一点点尖端工具的辅助，电脑才能用得长久。<br>至于360，我的意见是客观看待，会用的和不会用的都说它是神中神，至于中间的，嘿嘿，自己揣摩。</p>
 ]]></content>
       <tags>
         <tag>Normal</tag>
