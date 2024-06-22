@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>Openweather Using |  Pfolg&#39;s Personal Website</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="Pfolg's Personal Website" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-openweather_use"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Openweather Using
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2024/06/23/openweather_use/" class="article-date">
+  <time datetime="2024-06-22T16:37:57.636Z" itemprop="datePublished">2024-06-23</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.7k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">9 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>可恶，琢磨了好久，今天终于给他干出来了！</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><h2 id="官方示例"><a href="#官方示例" class="headerlink" title="官方示例"></a>官方示例</h2><p>这个是获取地理信息的……</p>
+<p><code>http://api.openweathermap.org/geo/1.0/direct?q=&#123;city name&#125;,&#123;state code&#125;,&#123;country code&#125;&amp;limit=&#123;limit&#125;&amp;appid=&#123;API key&#125;</code></p>
+<p><code>q</code>	<strong>必填</strong>	城市名称、州代码（仅适用于美国）和国家&#x2F;地区代码，用逗号分隔。请使用 ISO 3166 个国家&#x2F;地区代码。</p>
+<p><code>appid</code>	<strong>必填</strong>	您唯一的 API 密钥（您始终可以在帐户页面上的“API 密钥”选项卡下找到它）</p>
+<p><code>limit</code>	<strong>自选</strong>	API 响应中的位置数（API 中最多可以返回 5 个结果 响应）</p>
+<h2 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h2><h2 id="依赖的第三方库"><a href="#依赖的第三方库" class="headerlink" title="依赖的第三方库"></a>依赖的第三方库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install requests</span><br><span class="line">pip install tkinter</span><br></pre></td></tr></table></figure>
+<p>至于剩下的，看运气吧，有的话不管。</p>
+<h2 id="Python代码"><a href="#Python代码" class="headerlink" title="Python代码"></a>Python代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> tkinter <span class="keyword">as</span> tk</span><br><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> ttk, messagebox</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">color = <span class="string">&#x27;#FFFFFF&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show</span>():</span><br><span class="line">    jd_label = tk.Label(window,</span><br><span class="line">                        text=<span class="string">&#x27;Fake进度条&#x27;</span>,</span><br><span class="line">                        font=(<span class="string">r&#x27;C:\Windows\Fonts\msyh.ttc&#x27;</span>, <span class="number">10</span>),</span><br><span class="line">                        fg=<span class="string">&#x27;#000000&#x27;</span>,</span><br><span class="line">                        bg=color,</span><br><span class="line">                        compound=<span class="string">&#x27;center&#x27;</span>)</span><br><span class="line">    jd_label.place(relx=<span class="number">0.5</span>, rely=<span class="number">0.8</span>, anchor=<span class="string">&#x27;center&#x27;</span>)</span><br><span class="line">    <span class="comment"># 进度条</span></span><br><span class="line">    progressbarOne = tk.ttk.Progressbar(window, length=s_width / <span class="number">2</span>, orient=tk.HORIZONTAL)</span><br><span class="line">    progressbarOne.pack(side=tk.LEFT)</span><br><span class="line">    progressbarOne.place(rely=<span class="number">0.85</span>)</span><br><span class="line">    <span class="comment"># 样式设置</span></span><br><span class="line">    s = tk.ttk.Style()</span><br><span class="line">    s.theme_use(<span class="string">&#x27;winnative&#x27;</span>)  <span class="comment"># clam, alt, default, classic, vista, aqua, xpnative, winnative</span></span><br><span class="line">    <span class="comment"># 进度值最大值</span></span><br><span class="line">    progressbarOne[<span class="string">&#x27;maximum&#x27;</span>] = <span class="number">100</span></span><br><span class="line">    <span class="comment"># 进度值初始值</span></span><br><span class="line">    progressbarOne[<span class="string">&#x27;value&#x27;</span>] = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">101</span>):</span><br><span class="line">        progressbarOne[<span class="string">&#x27;value&#x27;</span>] = i</span><br><span class="line">        <span class="comment"># 更新画面</span></span><br><span class="line">        window.update()</span><br><span class="line">        time.sleep(<span class="number">0.005</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_data</span>():</span><br><span class="line">    show()</span><br><span class="line">    language = <span class="string">&#x27;zh_cn&#x27;</span>  <span class="comment"># 简体中文  &amp;lang=&#123;language&#125;</span></span><br><span class="line">    city_name = get_city.get()  <span class="comment"># q=&#123;city_name&#125;</span></span><br><span class="line">    <span class="comment"># limit = 5  # &amp;limit=&#123;limit&#125;</span></span><br><span class="line">    API_key = get_api.get()  <span class="comment"># &amp;appid=&#123;API_key&#125;</span></span><br><span class="line">    <span class="comment"># api_name = &#x27;api&#x27;  # 好像没什么用</span></span><br><span class="line">    url = <span class="string">f&#x27;http://api.openweathermap.org/data/2.5/weather?q=<span class="subst">&#123;city_name&#125;</span>&amp;units=metric&amp;appid=<span class="subst">&#123;API_key&#125;</span>&amp;lang=<span class="subst">&#123;language&#125;</span>&#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 获取数据并转换</span></span><br><span class="line">    target = requests.get(url)</span><br><span class="line">    content = target.json()</span><br><span class="line">    s = json.dumps(content, ensure_ascii=<span class="literal">False</span>, indent=<span class="number">2</span>)</span><br><span class="line">    data = json.loads(s)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 气象数据</span></span><br><span class="line">    city = data[<span class="string">&quot;name&quot;</span>]</span><br><span class="line">    weather = data[<span class="string">&quot;weather&quot;</span>][<span class="number">0</span>][<span class="string">&quot;main&quot;</span>]  <span class="comment"># Clouds</span></span><br><span class="line">    weather_description = data[<span class="string">&quot;weather&quot;</span>][<span class="number">0</span>][<span class="string">&quot;description&quot;</span>]  <span class="comment"># 多云</span></span><br><span class="line">    temp = data[<span class="string">&#x27;main&#x27;</span>][<span class="string">&#x27;temp&#x27;</span>]  <span class="comment"># ℃</span></span><br><span class="line">    pressure = data[<span class="string">&#x27;main&#x27;</span>][<span class="string">&#x27;pressure&#x27;</span>]  <span class="comment"># Pa</span></span><br><span class="line">    humidity = data[<span class="string">&#x27;main&#x27;</span>][<span class="string">&#x27;humidity&#x27;</span>]  <span class="comment"># %</span></span><br><span class="line">    visibility = data[<span class="string">&#x27;visibility&#x27;</span>]  <span class="comment"># m</span></span><br><span class="line">    sunrise = trans_time(data[<span class="string">&#x27;sys&#x27;</span>][<span class="string">&#x27;sunrise&#x27;</span>])</span><br><span class="line">    sunset = trans_time(data[<span class="string">&#x27;sys&#x27;</span>][<span class="string">&#x27;sunset&#x27;</span>])</span><br><span class="line">    x = &#123;<span class="string">&#x27;city&#x27;</span>: city, <span class="string">&#x27;weather&#x27;</span>: weather, <span class="string">&#x27;weather_description&#x27;</span>: weather_description, <span class="string">&#x27;temp&#x27;</span>: temp,</span><br><span class="line">         <span class="string">&#x27;pressure&#x27;</span>: pressure, <span class="string">&#x27;humidity&#x27;</span>: humidity, <span class="string">&#x27;visibility&#x27;</span>: visibility, <span class="string">&#x27;sunrise&#x27;</span>: sunrise, <span class="string">&#x27;sunset&#x27;</span>: sunset&#125;</span><br><span class="line">    show_main(x)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 时间</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">trans_time</span>(<span class="params">timestamp: <span class="built_in">int</span></span>):</span><br><span class="line">    ti = datetime.datetime.fromtimestamp(timestamp).strftime(<span class="string">&#x27;%H:%M:%S&#x27;</span>)  <span class="comment"># &#x27;%Y-%m-%d %H:%M:%S&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> ti</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_time</span>():</span><br><span class="line">    time2 = time.strftime(<span class="string">&#x27;%Y-%m-%d %H:%M:%S&#x27;</span>)</span><br><span class="line">    clock = tk.Label(window, text=time2, font=<span class="number">20</span>, bg=color, fg=<span class="string">&#x27;#EB3324&#x27;</span>)</span><br><span class="line">    clock.place(relx=<span class="number">0.01</span>, rely=<span class="number">0.935</span>)</span><br><span class="line">    clock.after(<span class="number">1000</span>, get_time)  <span class="comment"># 1000ms=1s</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show_main</span>(<span class="params">infor: <span class="built_in">dict</span></span>):</span><br><span class="line">    c, w, wd, tp, p, h, v, sr, st = infor.values()</span><br><span class="line">    main_text = <span class="string">f&#x27;城市:<span class="subst">&#123;c&#125;</span>\n天气:<span class="subst">&#123;w&#125;</span> <span class="subst">&#123;wd&#125;</span>\n温度:<span class="subst">&#123;tp&#125;</span> ℃\n湿度:<span class="subst">&#123;h&#125;</span> %\n气压:<span class="subst">&#123;p&#125;</span> Pa\n能见度:<span class="subst">&#123;v&#125;</span> m\n日出:<span class="subst">&#123;sr&#125;</span>\n日落:<span class="subst">&#123;st&#125;</span>&#x27;</span></span><br><span class="line">    tk.messagebox.showinfo(title=<span class="string">&#x27;获取到的天气信息&#x27;</span>, message=main_text)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment"># tk.messagebox.showinfo(title=&#x27;使用门槛&#x27;, message=&#x27;您需要在一个叫openweather的平台注册账号后获取API才能使用&#x27;</span></span><br><span class="line">    <span class="comment">#                                                  &#x27;\n这是一个可以上网的程序，如果您担心安全问题，请终止运行&#x27;)</span></span><br><span class="line">    window = tk.Tk()</span><br><span class="line">    s_width, s_height = window.winfo_screenwidth(), window.winfo_screenheight()</span><br><span class="line">    size = <span class="string">f&#x27;<span class="subst">&#123;<span class="built_in">int</span>(s_width / <span class="number">2</span>)&#125;</span>x<span class="subst">&#123;<span class="built_in">int</span>(s_height / <span class="number">2</span>)&#125;</span>+<span class="subst">&#123;<span class="built_in">int</span>(s_width / <span class="number">4</span>)&#125;</span>+<span class="subst">&#123;<span class="built_in">int</span>(s_height / <span class="number">4</span>)&#125;</span>&#x27;</span></span><br><span class="line">    window.geometry(size)</span><br><span class="line">    window.title(<span class="string">&#x27;Weather&#x27;</span>)</span><br><span class="line">    window.config(background=color)</span><br><span class="line">    <span class="comment"># window.overrideredirect(True)</span></span><br><span class="line">    window.resizable(<span class="literal">False</span>, <span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 城市</span></span><br><span class="line">    get_city = tk.StringVar()</span><br><span class="line">    cc1 = tk.Entry(window, width=<span class="number">30</span>, textvariable=get_city)</span><br><span class="line">    cc1.delete(<span class="number">0</span>, <span class="string">&#x27;end&#x27;</span>)</span><br><span class="line">    cc1.insert(<span class="number">0</span>, <span class="string">&#x27;Chengdu&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    label1 = tk.Label(window,</span><br><span class="line">                      text=<span class="string">&#x27;城市&#x27;</span>,</span><br><span class="line">                      font=(<span class="string">r&#x27;C:\Windows\Fonts\msyh.ttc&#x27;</span>, <span class="number">15</span>),</span><br><span class="line">                      fg=<span class="string">&#x27;#000000&#x27;</span>,</span><br><span class="line">                      bg=color,</span><br><span class="line">                      compound=<span class="string">&#x27;center&#x27;</span>)</span><br><span class="line">    label1.place(relx=<span class="number">0.2</span>, rely=<span class="number">0.3</span>)</span><br><span class="line">    cc1.place(relx=<span class="number">0.4</span>, rely=<span class="number">0.3</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># API</span></span><br><span class="line">    get_api = tk.StringVar()</span><br><span class="line">    cc2 = tk.Entry(window, width=<span class="number">30</span>, textvariable=get_api)</span><br><span class="line">    cc2.delete(<span class="number">0</span>, <span class="string">&#x27;end&#x27;</span>)</span><br><span class="line">    cc2.insert(<span class="number">0</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    label2 = tk.Label(window,</span><br><span class="line">                      text=<span class="string">&#x27;您的API&#x27;</span>,</span><br><span class="line">                      font=(<span class="string">r&#x27;C:\Windows\Fonts\msyh.ttc&#x27;</span>, <span class="number">15</span>),</span><br><span class="line">                      fg=<span class="string">&#x27;#000000&#x27;</span>,</span><br><span class="line">                      bg=color,</span><br><span class="line">                      compound=<span class="string">&#x27;center&#x27;</span>)</span><br><span class="line">    label2.place(relx=<span class="number">0.2</span>, rely=<span class="number">0.4</span>)</span><br><span class="line">    cc2.place(relx=<span class="number">0.4</span>, rely=<span class="number">0.4</span>)</span><br><span class="line"></span><br><span class="line">    btu = tk.Button(window,</span><br><span class="line">                    text=<span class="string">&#x27;开始&#x27;</span>,</span><br><span class="line">                    fg=<span class="string">&quot;#000000&quot;</span>,</span><br><span class="line">                    width=<span class="number">7</span>,</span><br><span class="line">                    compound=<span class="string">&#x27;center&#x27;</span>,</span><br><span class="line">                    bg=color,</span><br><span class="line">                    command=get_data).place(relx=<span class="number">0.5</span>, rely=<span class="number">0.6</span>, anchor=<span class="string">&#x27;center&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    get_time()</span><br><span class="line">    window.mainloop()</span><br></pre></td></tr></table></figure>
+<h2 id="部分解释"><a href="#部分解释" class="headerlink" title="部分解释"></a>部分解释</h2><h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><pre><code>英语: en
+中文简体: zh_cn
+中文繁体: zh_tw
+法语: fr
+德语: de
+日语: ja
+韩语: kr
+西班牙语: es
+俄语: ru
+土耳其语: tr
+越南语: vi
+</code></pre>
+<h3 id="字典内信息"><a href="#字典内信息" class="headerlink" title="字典内信息"></a>字典内信息</h3><h4 id="json版的比较易读"><a href="#json版的比较易读" class="headerlink" title="json版的比较易读"></a>json版的比较易读</h4><pre><code>&#123;
+&quot;coord&quot;: &#123;
+    &quot;lon&quot;: 104.0667,
+    &quot;lat&quot;: 30.6667
+&#125;,
+&quot;weather&quot;: [
+    &#123;
+    &quot;id&quot;: 802,
+    &quot;main&quot;: &quot;Clouds&quot;,
+    &quot;description&quot;: &quot;多云&quot;,
+    &quot;icon&quot;: &quot;03n&quot;
+    &#125;
+],
+&quot;base&quot;: &quot;stations&quot;,
+&quot;main&quot;: &#123;
+    &quot;temp&quot;: 27.94,
+    &quot;feels_like&quot;: 28.75,
+    &quot;temp_min&quot;: 27.94,
+    &quot;temp_max&quot;: 27.94,
+    &quot;pressure&quot;: 1006,
+    &quot;humidity&quot;: 54
+&#125;,
+&quot;visibility&quot;: 10000,
+&quot;wind&quot;: &#123;
+    &quot;speed&quot;: 2,
+    &quot;deg&quot;: 210
+&#125;,
+&quot;clouds&quot;: &#123;
+    &quot;all&quot;: 40
+&#125;,
+&quot;dt&quot;: 1719066518,
+&quot;sys&quot;: &#123;
+    &quot;type&quot;: 1,
+    &quot;id&quot;: 9674,
+    &quot;country&quot;: &quot;CN&quot;,
+    &quot;sunrise&quot;: 1719007305,
+    &quot;sunset&quot;: 1719058179
+&#125;,
+&quot;timezone&quot;: 28800,
+&quot;id&quot;: 1815286,
+&quot;name&quot;: &quot;Chengdu&quot;,
+&quot;cod&quot;: 200
+&#125;
+</code></pre>
+<h4 id="dict版"><a href="#dict版" class="headerlink" title="dict版"></a>dict版</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">&#123;&#x27;coord&#x27;: &#123;&#x27;lon&#x27;: 104.0667, &#x27;lat&#x27;: 30.6667&#125;, &#x27;weather&#x27;: [&#123;&#x27;id&#x27;: 802, &#x27;main&#x27;: &#x27;Clouds&#x27;, &#x27;description&#x27;: &#x27;多云&#x27;, </span></span><br><span class="line"><span class="string">&#x27;icon&#x27;: &#x27;03n&#x27;&#125;], &#x27;base&#x27;: &#x27;stations&#x27;, &#x27;main&#x27;: &#123;&#x27;temp&#x27;: 27.94, &#x27;feels_like&#x27;: 28.75, &#x27;temp_min&#x27;: 27.94, &#x27;temp_max&#x27;: </span></span><br><span class="line"><span class="string">27.94, &#x27;pressure&#x27;: 1006, &#x27;humidity&#x27;: 54&#125;, &#x27;visibility&#x27;: 10000, &#x27;wind&#x27;: &#123;&#x27;speed&#x27;: 2, &#x27;deg&#x27;: 210&#125;, &#x27;clouds&#x27;: &#123;&#x27;all&#x27;: </span></span><br><span class="line"><span class="string">40&#125;, &#x27;dt&#x27;: 1719065933, &#x27;sys&#x27;: &#123;&#x27;type&#x27;: 1, &#x27;id&#x27;: 9674, &#x27;country&#x27;: &#x27;CN&#x27;, &#x27;sunrise&#x27;: 1719007305, &#x27;sunset&#x27;: 1719058179&#125;, </span></span><br><span class="line"><span class="string">&#x27;timezone&#x27;: 28800, &#x27;id&#x27;: 1815286, &#x27;name&#x27;: &#x27;Chengdu&#x27;, &#x27;cod&#x27;: 200&#125;</span></span><br><span class="line"><span class="string">&lt;class &#x27;dict&#x27;&gt;</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2 id="只想学怎么调用的看这里"><a href="#只想学怎么调用的看这里" class="headerlink" title="只想学怎么调用的看这里"></a>只想学怎么调用的看这里</h2><p>如何调用数据参考上面的“字典内信息”</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">language = <span class="string">&#x27;zh_cn&#x27;</span>  <span class="comment"># 简体中文  &amp;lang=&#123;language&#125;</span></span><br><span class="line">city_name = get_city.get()  <span class="comment"># q=&#123;city_name&#125;</span></span><br><span class="line"><span class="comment"># limit = 5  # &amp;limit=&#123;limit&#125;</span></span><br><span class="line">API_key = get_api.get()  <span class="comment"># &amp;appid=&#123;API_key&#125;</span></span><br><span class="line"><span class="comment"># api_name = &#x27;api&#x27;  # 好像没什么用</span></span><br><span class="line">url = <span class="string">f&#x27;http://api.openweathermap.org/data/2.5/weather?q=<span class="subst">&#123;city_name&#125;</span>&amp;units=metric&amp;appid=<span class="subst">&#123;API_key&#125;</span>&amp;lang=<span class="subst">&#123;language&#125;</span>&#x27;</span></span><br><span class="line"></span><br><span class="line">target = requests.get(url)</span><br><span class="line">content = target.json()</span><br><span class="line">s = json.dumps(content, ensure_ascii=<span class="literal">False</span>, indent=<span class="number">2</span>)</span><br><span class="line">data = json.loads(s)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 气象数据</span></span><br><span class="line">city = data[<span class="string">&quot;name&quot;</span>]</span><br><span class="line">weather = data[<span class="string">&quot;weather&quot;</span>][<span class="number">0</span>][<span class="string">&quot;main&quot;</span>]  <span class="comment"># Clouds</span></span><br><span class="line">weather_description = data[<span class="string">&quot;weather&quot;</span>][<span class="number">0</span>][<span class="string">&quot;description&quot;</span>]  <span class="comment"># 多云</span></span><br><span class="line">temp = data[<span class="string">&#x27;main&#x27;</span>][<span class="string">&#x27;temp&#x27;</span>]  <span class="comment"># ℃</span></span><br><span class="line">pressure = data[<span class="string">&#x27;main&#x27;</span>][<span class="string">&#x27;pressure&#x27;</span>]  <span class="comment"># Pa</span></span><br><span class="line">humidity = data[<span class="string">&#x27;main&#x27;</span>][<span class="string">&#x27;humidity&#x27;</span>]  <span class="comment"># %</span></span><br><span class="line">visibility = data[<span class="string">&#x27;visibility&#x27;</span>]  <span class="comment"># m</span></span><br><span class="line">sunrise = trans_time(data[<span class="string">&#x27;sys&#x27;</span>][<span class="string">&#x27;sunrise&#x27;</span>])</span><br><span class="line">sunset = trans_time(data[<span class="string">&#x27;sys&#x27;</span>][<span class="string">&#x27;sunset&#x27;</span>])</span><br><span class="line">x = &#123;<span class="string">&#x27;city&#x27;</span>: city, <span class="string">&#x27;weather&#x27;</span>: weather, <span class="string">&#x27;weather_description&#x27;</span>: weather_description, <span class="string">&#x27;temp&#x27;</span>: temp,<span class="string">&#x27;pressure&#x27;</span>: pressure, <span class="string">&#x27;humidity&#x27;</span>: humidity, <span class="string">&#x27;visibility&#x27;</span>: visibility, <span class="string">&#x27;sunrise&#x27;</span>: sunrise, <span class="string">&#x27;sunset&#x27;</span>: sunset&#125;</span><br></pre></td></tr></table></figure>
+<p>你可以分别print一下看看效果或者分步学习</p>
+<h1 id="本程序实现效果"><a href="#本程序实现效果" class="headerlink" title="本程序实现效果"></a>本程序实现效果</h1><p><strong>主界面</strong></p>
+<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/db9ef635-8f38-4c00-94c2-8a5853d214c4"></p>
+<p><strong>获取到的数据</strong></p>
+<p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/b594780a-6261-4ca4-8414-fec4078a9de1"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2024/06/23/openweather_use/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2024/06/18/virusbsvj/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">浅谈“维波斯基”病毒</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.staticfile.org/valine/1.4.16/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "OVmKbCB8fMRqoDVtr0yqUuiL-gzGzoHsz",
+    app_key: "9zEWQ6NxFHDp7OfK3S5waBxk",
+    path: window.location.pathname,
+    avatar: "hide",
+    placeholder: "发表您的观点",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+  
+    
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2024
+        <i class="ri-heart-fill heart_icon"></i> Pfolg
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/my_cloud.jpg" alt="Pfolg&#39;s Personal Website"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/mine">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+ 
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=1906543762&auto=0&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+</body>
+
+</html>
