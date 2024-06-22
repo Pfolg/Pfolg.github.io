@@ -4,6 +4,7 @@
     <title>Openweather Using</title>
     <url>/2024/06/23/openweather_use/</url>
     <content><![CDATA[<p>可恶，琢磨了好久，今天终于给他干出来了！</p>
+<p><a href="https://blog.csdn.net/qq_46603846/article/details/139891004?spm=1001.2014.3001.5501">在CSDN查看</a></p>
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><h2 id="官方示例"><a href="#官方示例" class="headerlink" title="官方示例"></a>官方示例</h2><p>这个是获取地理信息的……</p>
 <p><code>http://api.openweathermap.org/geo/1.0/direct?q=&#123;city name&#125;,&#123;state code&#125;,&#123;country code&#125;&amp;limit=&#123;limit&#125;&amp;appid=&#123;API key&#125;</code></p>
 <p><code>q</code>	<strong>必填</strong>	城市名称、州代码（仅适用于美国）和国家&#x2F;地区代码，用逗号分隔。请使用 ISO 3166 个国家&#x2F;地区代码。</p>
