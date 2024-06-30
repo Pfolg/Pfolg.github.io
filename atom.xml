@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-06-28T09:02:49.087Z</updated>
+  <updated>2024-06-30T07:50:54.358Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于大学生的30小时制</title>
+    <link href="http://example.com/2024/06/30/30_hours_format/"/>
+    <id>http://example.com/2024/06/30/30_hours_format/</id>
+    <published>2024-06-30T07:37:38.158Z</published>
+    <updated>2024-06-30T07:50:54.358Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="看图说话"><a href="#看图说话" class="headerlink" title="看图说话"></a>看图说话</h1><p><img src="https://github.com/Pfolg/CLSS_1022/assets/166471137/9f7d32ce-2c3b-45cd-bfe7-40b54a4da851"></p><p>27:27 ？！这是真的，并且非常符合咱们这一群人，是哪群人我不说🤪。</p><h1 id="什么是30小时制"><a href="#什么是30小时制" class="headerlink" title="什么是30小时制"></a>什么是30小时制</h1><p>那么，在震惊之余，我们来了解一下什么是27:27。</p><p><a href="https://www.163.com/dy/article/I36GUQ660532SOLU.html">为何日本的时间是30小时制，而全球其他地方都是24小时制？</a></p><p>简而言之，就是一天仍然有24小时，但不算1~5时，每天以6点开始，30点结束。好家伙，标准的熬夜作息！！！</p><p>一种心理安慰罢了，日期早已刷新，而咱们却<strong>赚</strong>自己每天6点才刷新新一天。</p><p>PS:本人从小看抗日神剧长大。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;看图说话&quot;&gt;&lt;a href=&quot;#看图说话&quot; class=&quot;headerlink&quot; title=&quot;看图说话&quot;&gt;&lt;/a&gt;看图说话&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://github.com/Pfolg/CLSS_1022/assets/166471137/</summary>
+      
+    
+    
+    
+    
+    <category term="Normal" scheme="http://example.com/tags/Normal/"/>
+    
+  </entry>
   
   <entry>
     <title>批量创建文件(文件夹)(python)</title>
